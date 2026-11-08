@@ -2,10 +2,6 @@
 
 define('APP_BOOTSTRAPPED', true);
 
-// ======================================
-// INITIALIZATION
-// ======================================
-
 $host = "localhost";
 $dbname = "db_cooperative";
 $username = "root";
@@ -19,11 +15,6 @@ $pdo = new PDO(
 
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-
-// ======================================
-// PAGE ROUTING
-// ======================================
-
 $page = $_GET['page'] ?? 'home';
 
 switch ($page) {
@@ -34,6 +25,10 @@ switch ($page) {
 
     case 'suppliers':
         require __DIR__ . '/suppliers.php';
+        break;
+
+    case 'employees':
+        require __DIR__ . '/employees.php';
         break;
 
     case 'home':
@@ -62,6 +57,12 @@ switch ($page) {
 
             <a href="index.php?page=suppliers">
                 Manage suppliers
+            </a>
+
+            <br>
+            
+            <a href="index.php?page=employees">
+                Manage employees
             </a>
 
         </body>

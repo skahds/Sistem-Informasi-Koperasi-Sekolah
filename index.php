@@ -32,6 +32,10 @@ switch ($page) {
         require __DIR__ . '/products.php';
         break;
 
+    case 'suppliers':
+        require __DIR__ . '/suppliers.php';
+        break;
+
     case 'home':
         ?>
 
@@ -52,6 +56,12 @@ switch ($page) {
 
             <a href="index.php?page=products">
                 Manage Products
+            </a>
+
+            <br>
+
+            <a href="index.php?page=suppliers">
+                Manage suppliers
             </a>
 
         </body>

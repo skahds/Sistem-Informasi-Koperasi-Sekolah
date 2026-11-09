@@ -41,30 +41,36 @@ switch ($page) {
             <style>
               * {
                 font-family: Arial, Helvetica, sans-serif;
-              }
+                }
+
+            main {
+                width: 35%;
+                margin: 20px auto;
+            }
             </style>
         </head>
 
         <body>
+            <main>
+                <h1>Welcome</h1>
 
-            <h1>Welcome</h1>
+                <a href="index.php?page=products">
+                    Manage Products
+                </a>
 
-            <a href="index.php?page=products">
-                Manage Products
-            </a>
+                <br>
 
-            <br>
+                <a href="index.php?page=suppliers">
+                    Manage suppliers
+                </a>
 
-            <a href="index.php?page=suppliers">
-                Manage suppliers
-            </a>
+                <br>
+                
+                <a href="index.php?page=employees">
+                    Manage employees
+                </a>
 
-            <br>
-            
-            <a href="index.php?page=employees">
-                Manage employees
-            </a>
-
+            </main> 
         </body>
         </html>
 
